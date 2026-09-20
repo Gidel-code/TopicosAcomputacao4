@@ -1,2 +1,2 @@
 # TopicosAcomputacao4
-repositorio para a primeira avaliação, contendo codigos utilizados
+repositorio para a primeira avaliação, contendo codigos utilizados.
