@@ -1,17 +1,19 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main()
 {
+    vector<int> v;
+    int x;
 
 
-    int n = 10;
-    int v[n];
-
-    for(int l=0; l<n; l++){
-        cin >> v[l];
+    while(cin >> x){
+        v.push_back(x);
     }
+
+    int n = v.size();
     for(int i=0; i<n-1; i++){
         int minimo = i;
             for(int j=i+1; j<n; j++){
@@ -23,8 +25,6 @@ int main()
         v[i] = v[minimo];
         v[minimo] = temp;
     }
-
-
 
     for (int i = 0; i < n; i++) {
         cout << "Posicao [" << i << "]: " << v[i] << "\n";
